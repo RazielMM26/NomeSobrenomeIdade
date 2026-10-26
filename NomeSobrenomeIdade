@@ -1,0 +1,30 @@
+using System;
+					
+public class Program
+{
+	public static void Main(){
+		
+	//declaração de variáveis
+	string nome, sobrenome;
+	int idade, ano;
+	
+	//coleta de variáveis
+	Console.WriteLine("Digite seu nome.");
+	nome = Console.ReadLine();
+	Console.WriteLine("Digite seu sobrenome.");
+	sobrenome = Console.ReadLine();
+	Console.WriteLine("Digite sua idade.");
+	idade = Convert.ToInt16(Console.ReadLine());
+	
+	//operações
+	ano = 2026 - idade;
+		
+	//exibição e tratamento de dados
+	Console.WriteLine("Olá " + nome + " " + sobrenome + "! Então você tem " + idade + " anos de idade!");
+		if (idade >= 18){
+			Console.WriteLine("Logo, você é maior de idade.");
+		}else{
+			Console.WriteLine("Logo, você é menor de idade.");
+		}
+	}
+}
